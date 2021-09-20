@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Cash Register</title>
+    <title>IRD-CC</title>
 </head>
 <body>
     <div class="container">
-    <h1 class="heading">Cash Register Manager</h1>
-    <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-    <label for="bill-amount"></label>
-    <input id="bill-amount" type="text">
-    <label for="cash-given"></label>
-    <input id="cash-given" type="text">
+    <h1 class="heading">IRD Change Calculator</h1>
+    <h2 class="description">Put the <strong>Bill Amount</strong> and <strong>Cash Given</strong> by the customer <br> 
+        To calculate the change you have to Give </h2>
+    <label for="bill-amount" style="font-size: 2rem;"><strong>Bill Amount</strong></label><br>
+    <input id="bill-amount" type="text" style="padding: 0.4rem;"><br><br>
+    <label for="cash-given" style="font-size: 2rem;"><strong>Cash Given</strong></label><br>
+    <input id="cash-given" type="text" style="padding: 0.4rem;">
+    <br><br><br>
     <button id="check-button">Check</button>
     <p id="error-message"></p>
     <table class="change-table">
         <caption>Return Change</caption>
-        <tr>
+        <tr style="padding: 2rem;">
             <th>No of Notes</th>
             <td class="no-of-notes"></td>
             <td class="no-of-notes"></td>
